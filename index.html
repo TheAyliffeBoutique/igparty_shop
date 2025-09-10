@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG Personalized Party Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3f3;
+        }
+        .section-hidden {
+            display: none;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .input-field {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            margin-top: 0.25rem;
+            transition: all 0.2s;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #c996ad;
+            box-shadow: 0 0 0 3px rgba(201, 150, 173, 0.4);
+        }
+        .form-title {
+            color: #7d4e68;
+            font-weight: 700;
+        }
+        .form-button {
+            background-color: #c996ad;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .form-button:hover {
+            background-color: #7d4e68;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="flex items-center space-x-4">
+                <a href="index.html">
+                    <img src="https://placehold.co/100x100/ffffff/000000?text=IG" alt="IG Logo" class="rounded-full w-24 h-24">
+                </a>
+                <span class="text-xl font-bold text-[#7d4e68]">IG Personalized Party Shop</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 font-semibold">
+                    <li><a href="index.html" class="text-gray-600 hover:text-[#c996ad] transition-colors duration-300">Home</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-[#c996ad] transition-colors duration-300">Contact</a></li>
+                    <li><a href="order.html" class="text-gray-600 hover:text-[#c996ad] transition-colors duration-300">Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <section id="home" class="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-5xl font-bold text-[#7d4e68] mb-4">Personalized Party & Events Shop</h1>
+                <p class="text-lg text-gray-600 mb-8">We offer personalized party and event items for every occasion. From custom bags to birthday cards, we have everything you need to make your celebration special and unique.</p>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="igparty_shop.jpg" alt="Assortment of personalized party items" class="rounded-lg shadow-2xl w-full">
+            </div>
+        </section>
+
+        <!-- Product Showcase Section -->
+        <section class="py-16">
+            <h2 class="text-4xl font-bold text-[#7d4e68] text-center mb-12">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <img src="bag.jpg" alt="Custom party bag" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-[#7d4e68] mb-2">Custom Bags</h3>
+                    <p class="text-gray-600">Personalized party bags perfect for gifts and party favors.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <img src="cards.jpg" alt="Personalized birthday cards" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-[#7d4e68] mb-2">Birthday Cards</h3>
+                    <p class="text-gray-600">Unique birthday cards with custom names and messages.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <img src="table.jpg" alt="Event decorations and party favors" class="rounded-lg mb-4 w-full">
+                    <h3 class="text-2xl font-semibold text-[#7d4e68] mb-2">Event Decorations</h3>
+                    <p class="text-gray-600">Custom banners, signs, and decorations to match your theme.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 IG Personalized Party Shop. All rights reserved.</p>
+            <p class="mt-2">Designed with ❤️</p>
+        </div>
+    </footer>
+
+</body>
+</html>
